@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Amisha R Thankam — Computer Science student exploring software development, AI, and hardware-software projects." />
+  <title>Amisha R Thankam | Computer Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <style>
+    :root{--bg:#0b1020;--panel:#11182b;--panel2:#151e34;--text:#f4f7ff;--muted:#a6b0c5;--line:rgba(220,231,255,.12);--mint:#83f0d0;--blue:#8ab4ff;--purple:#b5a0ff;--radius:22px;--ease:all .25s ease}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 12% 8%,rgba(131,240,208,.11),transparent 34%),radial-gradient(ellipse at 88% 26%,rgba(138,180,255,.12),transparent 33%),radial-gradient(ellipse at 55% 100%,rgba(181,160,255,.08),transparent 35%)}
+    a{color:inherit}.wrap{width:min(1100px,88%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(11,16,32,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font:700 1.2rem 'Space Grotesk',sans-serif;text-decoration:none;letter-spacing:-.04em}.brand span{color:var(--mint)}.nav-links{display:flex;gap:30px;align-items:center}.nav-links a{text-decoration:none;color:var(--muted);font-size:.92rem;font-weight:600;transition:var(--ease)}.nav-links a:hover,.nav-links a.active{color:var(--mint)}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 12px;font-size:1.1rem}
+    section{padding:96px 0}.hero{padding:112px 0 92px;min-height:calc(88vh - 76px);display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.35fr .75fr;align-items:center;gap:60px}.eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(131,240,208,.25);background:rgba(131,240,208,.07);color:var(--mint);padding:7px 13px;border-radius:999px;font-size:.82rem;font-weight:700;letter-spacing:.03em;margin-bottom:24px}.status-dot{height:7px;width:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint)}h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.15;letter-spacing:-.04em}.hero h1{font-size:clamp(2.7rem,6.4vw,5rem);max-width:720px}.hero h1 span{background:linear-gradient(100deg,var(--mint),var(--blue) 60%,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{font-size:1.12rem;color:var(--muted);max-width:650px;margin:25px 0 30px}.actions{display:flex;flex-wrap:wrap;gap:13px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;border-radius:12px;text-decoration:none;font-weight:700;border:1px solid transparent;transition:var(--ease)}.btn-primary{background:var(--mint);color:#0b1720}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(131,240,208,.16)}.btn-secondary{border-color:var(--line);background:rgba(255,255,255,.025)}.btn-secondary:hover{border-color:rgba(138,180,255,.6);transform:translateY(-3px)}
+    .hero-visual{position:relative;display:grid;place-items:center;min-height:340px}.orbit{position:absolute;width:290px;height:290px;border:1px solid rgba(138,180,255,.25);border-radius:50%;animation:spin 30s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(131,240,208,.22);border-radius:50%;inset:22px;transform:rotate(55deg) scaleX(.7)}.orbit:after{inset:-18px 40px;transform:rotate(-42deg) scaleX(.7)}.avatar-card{position:relative;width:225px;height:250px;border:1px solid rgba(255,255,255,.15);border-radius:28px;background:linear-gradient(145deg,rgba(131,240,208,.15),rgba(138,180,255,.12) 55%,rgba(181,160,255,.16));display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 24px 80px rgba(0,0,0,.25);transform:rotate(3deg)}.avatar-icon{font-size:4.5rem;color:var(--mint);margin-bottom:15px}.avatar-card strong{font:700 1.25rem 'Space Grotesk',sans-serif}.avatar-card small{color:var(--muted);margin-top:5px}.float-chip{position:absolute;background:#121b30;border:1px solid var(--line);padding:10px 13px;border-radius:12px;font-size:.82rem;font-weight:700;box-shadow:0 12px 28px rgba(0,0,0,.2)}.chip-one{top:34px;right:-5px;color:var(--mint)}.chip-two{bottom:28px;left:-2px;color:var(--blue)}@keyframes spin{to{transform:rotate(360deg)}}
+    .section-head{margin-bottom:38px;max-width:700px}.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;color:var(--mint);font-weight:700;margin-bottom:10px}.section-title{font-size:clamp(2rem,4vw,3rem);margin-bottom:14px}.section-intro{color:var(--muted);font-size:1.02rem}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.panel{background:linear-gradient(145deg,rgba(21,30,52,.88),rgba(15,22,40,.88));border:1px solid var(--line);border-radius:var(--radius);padding:30px}.panel p{color:var(--muted)}.fact-list{display:grid;gap:16px}.fact{display:flex;align-items:flex-start;gap:13px}.fact i{color:var(--mint);margin-top:5px;width:18px;text-align:center}.fact strong{display:block;font-size:.96rem}.fact span{color:var(--muted);font-size:.9rem}
+    .skills-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.skill{padding:22px 14px;text-align:center;border:1px solid var(--line);background:rgba(17,24,43,.72);border-radius:16px;transition:var(--ease)}.skill:hover{transform:translateY(-5px);border-color:rgba(131,240,208,.4);background:var(--panel2)}.skill i{font-size:1.65rem;color:var(--mint);margin-bottom:11px}.skill span{display:block;font-size:.9rem;font-weight:700}
+    .projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.project{position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(21,30,52,.9),rgba(13,19,35,.9));border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:var(--ease)}.project:hover{transform:translateY(-5px);border-color:rgba(138,180,255,.4)}.project-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}.project-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:rgba(131,240,208,.1);color:var(--mint);font-size:1.4rem}.project-number{font:600 .8rem 'Space Grotesk',sans-serif;color:#72809a}.project h3{font-size:1.35rem;margin-bottom:12px}.project p{color:var(--muted);font-size:.96rem;margin-bottom:20px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{font-size:.76rem;color:#c9d5e9;border:1px solid var(--line);background:rgba(255,255,255,.025);padding:5px 9px;border-radius:7px}
+    .contact-panel{display:grid;grid-template-columns:1fr .85fr;gap:35px;align-items:center;background:linear-gradient(120deg,rgba(131,240,208,.08),rgba(138,180,255,.07));border:1px solid var(--line);padding:clamp(25px,5vw,48px);border-radius:28px}.contact-panel .section-title{margin-bottom:15px}.contact-panel p{color:var(--muted)}.contact-links{display:grid;gap:12px}.contact-link{display:flex;align-items:center;gap:14px;text-decoration:none;border:1px solid var(--line);background:rgba(11,16,32,.45);padding:14px;border-radius:13px;transition:var(--ease);min-width:0}.contact-link:hover{border-color:rgba(131,240,208,.45);transform:translateX(3px)}.contact-link i{color:var(--mint);font-size:1.15rem;width:22px;text-align:center}.contact-link small{display:block;color:var(--muted);font-size:.76rem}.contact-link strong{display:block;font-size:.9rem;overflow-wrap:anywhere}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.back-top{color:var(--mint);text-decoration:none}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:25px}.hero{padding-top:75px}.hero-visual{min-height:300px;order:-1}.orbit{width:240px;height:240px}.avatar-card{width:190px;height:210px}.hero-copy{font-size:1.03rem}.skills-grid{grid-template-columns:repeat(3,1fr)}.contact-panel{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}}
+    @media(max-width:620px){.wrap{width:90%}.nav-wrap{min-height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 5% 22px;background:rgba(11,16,32,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}.nav-links.open{display:flex}.hero{min-height:auto;padding:68px 0 55px}.hero-visual{min-height:260px}.orbit{width:205px;height:205px}.avatar-card{width:160px;height:180px}.avatar-icon{font-size:3.4rem}.chip-one{right:0;top:20px}.chip-two{left:0;bottom:16px}section{padding:68px 0}.hero h1{font-size:clamp(2.55rem,12vw,3.7rem)}.skills-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:1fr}.panel,.project{padding:23px}.contact-panel{padding:24px}.footer-inner{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#home" aria-label="Amisha home">amisha<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Computer Science Student</div>
+          <h1>Curious mind.<br /><span>Creative solutions.</span></h1>
+          <p class="hero-copy">Hi, I'm Amisha R Thankam. I enjoy exploring software development and building practical ideas where code meets the real world — from web experiences to Arduino-based projects.</p>
+          <div class="actions"><a class="btn btn-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a><a class="btn btn-secondary" href="#contact"><i class="fa-regular fa-envelope"></i> Get in touch</a></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Computer science illustration">
+          <div class="orbit"></div>
+          <div class="avatar-card"><i class="fa-solid fa-laptop-code avatar-icon"></i><strong>Build. Learn. Improve.</strong><small>Turning ideas into projects</small></div>
+          <div class="float-chip chip-one"><i class="fa-solid fa-code"></i> Code & create</div>
+          <div class="float-chip chip-two"><i class="fa-solid fa-microchip"></i> Hardware + software</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal"><div class="kicker">A little about me</div><h2 class="section-title">Learning by building.</h2><p class="section-intro">I'm developing my foundations in computer science through hands-on projects, experimentation, and continuous learning.</p></div>
+        <div class="about-grid">
+          <article class="panel reveal"><p>I’m interested in creating useful, accessible technology and understanding how software and hardware can work together to solve everyday problems. Every project is a chance to learn something new, work through challenges, and improve my skills.</p></article>
+          <div class="panel fact-list reveal">
+            <div class="fact"><i class="fa-solid fa-graduation-cap"></i><div><strong>Computer Science & Engineering</strong><span>B.Tech student</span></div></div>
+            <div class="fact"><i class="fa-solid fa-code"></i><div><strong>Areas I'm exploring</strong><span>Programming, web development, AI and data</span></div></div>
+            <div class="fact"><i class="fa-solid fa-lightbulb"></i><div><strong>My approach</strong><span>Stay curious, build consistently, keep improving</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal"><div class="kicker">What I work with</div><h2 class="section-title">My toolkit.</h2><p class="section-intro">Tools and technologies I'm learning and using in my projects.</p></div>
+        <div class="skills-grid">
+          <div class="skill reveal"><i class="fa-brands fa-python"></i><span>Python</span></div>
+          <div class="skill reveal"><i class="fa-solid fa-c"></i><span>C</span></div>
+          <div class="skill reveal"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="skill reveal"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill reveal"><i class="fa-solid fa-microchip"></i><span>Arduino IDE</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head reveal"><div class="kicker">Selected projects</div><h2 class="section-title">Ideas in action.</h2><p class="section-intro">A few projects that reflect my interest in practical problem-solving and technology.</p></div>
+        <div class="projects-grid">
+          <article class="project reveal"><div class="project-top"><div class="project-icon"><i class="fa-solid fa-recycle"></i></div><span class="project-number">PROJECT 01</span></div><h3>Automated Waste Segregation</h3><p>An Arduino-based prototype designed to identify and separate wet and dry waste using sensors and programmed control logic.</p><div class="tags"><span>Arduino</span><span>Sensors</span><span>Embedded Systems</span></div></article>
+          <article class="project reveal"><div class="project-top"><div class="project-icon"><i class="fa-solid fa-eye"></i></div><span class="project-number">PROJECT 02</span></div><h3>Iris-Controlled Wheelchair</h3><p>A concept for assistive mobility that uses eye/iris movement as input to help a user control wheelchair direction.</p><div class="tags"><span>Assistive Tech</span><span>Arduino</span><span>Hardware + Software</span></div></article>
+          <article class="project reveal"><div class="project-top"><div class="project-icon"><i class="fa-solid fa-globe"></i></div><span class="project-number">PROJECT 03</span></div><h3>Personal Portfolio Website</h3><p>A responsive personal website to present my background, technical skills, and projects in a clear, professional format.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive Design</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-panel reveal">
+          <div><div class="kicker">Let's connect</div><h2 class="section-title">Have an idea or opportunity?</h2><p>I'm happy to connect about student projects, learning opportunities, internships, and technology. Feel free to reach out.</p><div style="margin-top:24px"><a class="btn btn-primary" href="mailto:amishathankam@gmail.com">Send me an email <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:amishathankam@gmail.com"><i class="fa-regular fa-envelope"></i><div><small>Email</small><strong>amishathankam@gmail.com</strong></div></a>
+            <a class="contact-link" href="https://github.com/amishathankam-tech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><div><small>GitHub</small><strong>github.com/amishathankam-tech</strong></div></a>
+            <a class="contact-link" href="tel:+919447924248"><i class="fa-solid fa-phone"></i><div><small>Phone</small><strong>+91 9447924248</strong></div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> Amisha R Thankam. Built with curiosity and code.</span><a class="back-top" href="#home">Back to top ↑</a></div></footer>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open'); menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    }), {threshold: 0.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
